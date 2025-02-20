@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethnus Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        /* Header */
+        .header {
+            background-color: #00bcd4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+        /* Navbar */
+        .navbar-custom {
+            background-color: #888;
+        }
+        .navbar-custom .nav-link {
+            color: white !important;
+        }
+        /* Sections */
+        .content {
+            background: white;
+            padding: 20px;
+            min-height: 300px;
+        }
+        .sidebar {
+            background: #666;
+            color: white;
+            padding: 20px;
+            min-height: 300px;
+        }
+        /* Footer */
+        .footer {
+            background-color: #888;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        Ethnus Layout
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">MENU</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">SIGNUP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="container mt-4">
+        <div class="row">
+            <article class="col-md-9 content">
+                <h2>Main Content</h2>
+                <p>Write your content here</p>
+            </article>
+            
+            <!-- Sidebar Section -->
+            <aside class="col-md-3 sidebar">
+                <h3>Sidebar</h3>
+                <p>This is the sidebar section</p>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2025 Ethnus Layout. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

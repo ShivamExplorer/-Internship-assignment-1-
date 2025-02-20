@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: navy;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+.train {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 200px; /* Adjust size if needed */
+    height: auto;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: royalblue;
+}

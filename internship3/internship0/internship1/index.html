@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">Registration form</h2>
+
+        <form id="registrationForm">
+            <label>First Name:</label>
+            <input type="text" id="firstName">
+            <span class="error" id="firstNameError">POOR</span><br>
+
+            <label>Last Name:</label>
+            <input type="text" id="lastName">
+            <span class="error" id="lastNameError">POOR</span><br>
+
+            <label>Email:</label>
+            <input type="email" id="email">
+            <span class="error" id="emailError">POOR</span><br>
+
+            <label>Password:</label>
+            <input type="password" id="password">
+            <span class="error" id="passwordError">POOR</span><br>
+
+            <label>Re-enter Password:</label>
+            <input type="password" id="confirmPassword">
+            <span class="error" id="confirmPasswordError">POOR OR MISMATCH</span><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female<br>
+
+            <label>Age:</label>
+            <input type="number" id="age">
+            <span class="error" id="ageError">POOR</span><br>
+
+            <label>Phone Number:</label>
+            <input type="text" id="phoneNumber">
+            <span class="error" id="phoneError">POOR</span><br>
+
+            <label>Address:</label>
+            <textarea id="address"></textarea>
+            <span class="error" id="addressError">POOR</span><br>
+
+            <label>State:</label>
+            <input type="text" id="state">
+            <span class="error" id="stateError">POOR</span><br>
+
+            <label>Country:</label>
+            <select id="country">
+                <option value="">Choose your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select><br>
+
+            <label>Languages known:</label>
+            <input type="checkbox" value="English"> English
+            <input type="checkbox" value="Kannada"> Kannada
+            <input type="checkbox" value="Hindi"> Hindi
+            <input type="checkbox" value="Telugu"> Telugu<br>
+
+            <input type="checkbox" id="declaration"> Hereby I declare all the given details are true<br>
+
+            <button type="button" onclick="validateForm()">REGISTER</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JavaScript -->
+
+</body>
+</html>

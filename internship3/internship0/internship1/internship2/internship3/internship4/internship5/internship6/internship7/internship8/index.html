@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to User Management</h2>
+        <p>Use the buttons below to navigate.</p>
+        <button onclick="showRegistration()">Register a User</button>
+        <button onclick="showUsers()">View Registered Users</button>
+    </div>
+
+    <div id="registrationForm" class="form-container">
+        <h3>User Registration</h3>
+        <form id="userForm">
+            <label>Name</label>
+            <input type="text" id="name" required>
+            
+            <label>Email</label>
+            <input type="email" id="email" required>
+            
+            <label>Contact</label>
+            <input type="text" id="contact" required>
+            
+            <label>Address</label>
+            <textarea id="address" required></textarea>
+            
+            <button type="submit">Register</button>
+            <button type="button" onclick="showUsers()">View Registered Users</button>
+        </form>
+    </div>
+
+    <div id="usersList" class="users-container">
+        <h3>Registered Users</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody"></tbody>
+        </table>
+        <button onclick="showRegistration()">Register More Users</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

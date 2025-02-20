@@ -1,0 +1,46 @@
+/* Styling for Vertical Navigation Bar */
+.vertical-nav {
+    width: 200px;
+    background-color: #f4f4f4;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.vertical-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+    background-color: #dff0ff;
+    margin-bottom: 5px;
+}
+
+.vertical-nav a.active {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styling for Horizontal Navigation Bar */
+.horizontal-nav {
+    display: flex;
+    border: 2px solid gray;
+    width: fit-content;
+}
+
+.horizontal-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: blue;
+    border-right: 1px solid gray;
+}
+
+.horizontal-nav a:last-child {
+    border-right: none;
+}
+
+.horizontal-nav a.active {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
